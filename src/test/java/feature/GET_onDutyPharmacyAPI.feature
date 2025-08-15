@@ -1,7 +1,7 @@
 Feature: Retrieve on-duty pharmacies from the Pharmacy on Duty API
 
   Background:
-    * def token = '23Pd8e4hQE0VQ5WOxUafC9:16WI1uZWrZV5Z3nOgkAbMg'
+    * def token = collectApiToken
     Given url pharmacyBaseUrl
     And path 'health', 'dutyPharmacy'
     And header Authorization = 'apikey ' + token

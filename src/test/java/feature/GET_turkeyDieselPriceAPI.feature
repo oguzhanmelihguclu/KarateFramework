@@ -1,7 +1,7 @@
 Feature: Retrieve fuel prices from the Fuel API
 
   Background:
-    * def token = '23Pd8e4hQE0VQ5WOxUafC9:16WI1uZWrZV5Z3nOgkAbMg'
+    * def token = collectApiToken
     Given url fuelBaseUrl
     And path 'gasPrice','turkeyDiesel'
     And header Authorization = 'apikey ' + token

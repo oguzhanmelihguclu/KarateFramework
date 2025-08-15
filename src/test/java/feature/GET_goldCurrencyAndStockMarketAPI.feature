@@ -2,7 +2,7 @@ Feature: Retrieve financial data from Gold, Currency, and Stock Market API
 
   Background:
 
-    * def token = '23Pd8e4hQE0VQ5WOxUafC9:16WI1uZWrZV5Z3nOgkAbMg'
+    * def token = collectApiToken
     Given url goldStockMarketBaseUrl
     And path 'economy', 'currencyToAll'
     And header Authorization = 'apikey ' + token

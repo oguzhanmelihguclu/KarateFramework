@@ -10,7 +10,8 @@ function fn() {
         restfulBaseUrl: 'https://restful-booker.herokuapp.com/',
         fuelBaseUrl : 'https://api.collectapi.com/' ,
         pharmacyBaseUrl : 'https://api.collectapi.com/',
-        goldStockMarketBaseUrl: 'https://api.collectapi.com/'
+        goldStockMarketBaseUrl: 'https://api.collectapi.com/',
+        collectApiToken: karate.properties['collectapi.token'] || '23Pd8e4hQE0VQ5WOxUafC9:16WI1uZWrZV5Z3nOgkAbMg'
     };
     if (env == 'stage') {
         // over-ride only those that need to be
